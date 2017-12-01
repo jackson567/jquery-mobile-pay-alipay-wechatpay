@@ -1,5 +1,5 @@
 # jquery-mobile-pay-alipay-wechatpay
-移动端的支付页面.使用jquery + 移动端tap/touch功能
+移动端的h5支付页面,在安卓app嵌入html5+jquery支付页面..使用jquery + 移动端tap/touch功能
 
 # 功能
 1. 切换支付方式
