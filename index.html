@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--移动端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>账户充值</title>
+
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="lib/need/layer.css"/>
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/layer.js"></script>
+    <script type="text/javascript" src="js/pay_page.js"></script>
+</head>
+<body>
+<!--头部  star-->
+<header>
+    <span class="_left"><a href="javascript:history.go(-1);"><</a></span>
+    账户充值
+</header>
+<!--充值列表-->
+<section class="person_wallet_recharge p05">
+    <!--选择方式-->
+    <div class="choose-pay pl3p">
+        <a href="javascript:">
+            <span>充值方式</span>
+            <span class="choose-image"><img src="images/pay_alipay.png" alt=""></span>
+            <span class="choose-text">支付宝充值</span>
+            <span class="fr mr05 "> > </span>
+        </a>
+    </div>
+    <div class="choose-pay pl3p hide">
+        <a href="javascript:">
+            <span>充值方式</span>
+            <span class="choose-image"><img src="images/pay_wechat.png" alt=""></span>
+            <span class="choose-text">微信支付</span>
+            <span class="fr mr05 "> > </span>
+        </a>
+    </div>
+</section>
+
+<section class="money">
+    <!--选择金额-->
+    <ul class="choose-money">
+        <li>
+            <h2>30元</h2>
+        </li>
+        <li>
+            <h2>50元</h2>
+        </li>
+        <li>
+            <h2>100元</h2>
+        </li>
+        <li>
+            <h2>200元</h2>
+        </li>
+        <li>
+            <h2>300元</h2>
+        </li>
+        <li>
+            <h2>500元</h2>
+        </li>
+        <div style="clear: both;"></div>
+    </ul>
+    <!--手动输入金额-->
+    <div class="self-money pl3p">
+        金额(¥)
+        <input type="text" placeholder="100" id="self_change" value="100"/>
+    </div>
+</section>
+<section>
+    <!--充值点击-->
+    <div class="comfirm " id="comfirm">下一步</div>
+</section>
+<section class="others mt05">
+    <p class="pl3p">充值说明:单次充值金额最高不超过3000元!</p>
+</section>
+
+<!--遮罩层-->
+<div class="f-overlay"></div>
+<!--弹出选择-->
+<section class="f-way" id="f-way" style="display: none;">
+    <h2>请选择支付方式</h2>
+    <ul>
+        <li>
+            <div class="pay-icon">
+                <img src="images/pay_alipay.png" alt="">
+            </div>
+            <div class="pay-text">
+                <p>支付宝</p>
+                <p>使用支付宝支付密码快捷支付</p>
+            </div>
+            <div class="items-circle">
+                <div class="circle">
+                    <span class="inside choosed"></span>
+                </div>
+            </div>
+
+        </li>
+        <li>
+            <div class="pay-icon">
+                <img src="images/pay_wechat.png" alt="">
+            </div>
+            <div class="pay-text">
+                <p>微信支付</p>
+                <p>亿万用户的选择,更快更安全</p>
+            </div>
+            <div class="items-circle">
+                <div class="circle">
+                    <span class="inside"></span>
+                </div>
+            </div>
+
+        </li>
+    </ul>
+</section>
+</body>
+</html>

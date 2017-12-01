@@ -1,0 +1,448 @@
+html {
+    font-size: 125%;
+    /* 20梅16=125% min-font-size:12px bug*/
+}
+
+@media only screen and (min-width: 481px) {
+    html {
+        font-size: 188% !important;
+        /* 30.08梅16=188% */
+    }
+}
+
+@media only screen and (min-width: 561px) {
+    html {
+        font-size: 218% !important;
+        /* 38.88梅16=218% */
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    html {
+        font-size: 250% !important;
+        /* 40梅16=250% */
+    }
+}
+
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Microsoft YaHei";
+}
+
+body {
+    font-family: "Microsoft YaHei";
+    font-size: 0.7rem;
+    color: #333;
+    background-color: #fffcf4;
+    line-height: 0.7rem;
+    width: 100%;
+}
+
+em {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    color: #333;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input,
+textarea {
+    font-family: "Microsoft YaHei";
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.p05 {
+    padding: 0 .5rem;
+    box-sizing: border-box;
+}
+
+.mr05 {
+    margin-right: 0.5rem;
+}
+
+.mt05 {
+    margin-top: 0.5rem;
+}
+
+.pl3p {
+    padding-left: 3%;
+    box-sizing: border-box;
+}
+
+/**充值**/
+header {
+    background: #e95504;
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 97;
+}
+
+header,header a {
+    color: #ffffff;
+}
+
+header ._left {
+    width: 2rem;
+    height: 100%;
+    position: absolute;
+    left: 2%;
+    top: 0;
+}
+header ._left a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.person_wallet_recharge {
+    width: 100%;
+    height: auto;
+    margin-top: 3.5rem;
+    background: #ffffff;
+}
+
+.person_wallet_recharge .choose-pay {
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: .9rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.person_wallet_recharge .choose-pay a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.person_wallet_recharge .choose-pay a .choose-image img {
+    width: 1.5rem;
+    height: auto;
+    padding-left: 2%;
+    vertical-align: middle;
+}
+
+.person_wallet_recharge .choose-pay a .choose-text {
+    padding-left: 2%;
+    color: #bbb;
+}
+
+section.money {
+    background-color: #ffffff;
+    padding-top: .7rem;
+}
+
+section.money ul.choose-money {
+    width: 100%;
+}
+
+section.money ul.choose-money li {
+    float: left;
+    width: 27%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.2rem;
+    margin: .8rem 1% .8rem 4%;
+    box-sizing: border-box;
+    color: #525252;
+    position: relative;
+}
+
+section.money ul.choose-money .current {
+    background-color: #e95504;
+    color: #ffffff;
+}
+
+section.money .self-money {
+    background: #ffffff;
+    line-height: 2.2rem;
+    height: 2.2rem;
+    color: #333333;
+    font-size: 0.75rem;
+    margin: .5rem 0;
+}
+
+section.money .self-money input {
+    border: none;
+    padding-left: 1%;
+    color: #CCCCCC;
+    font-size: 0.75rem;
+}
+
+.comfirm {
+    width: 91%;
+    line-height: 2.4rem;
+    height: 2.4rem;
+    margin: 1rem auto;
+    font-size: 0.85rem;
+    border-radius: 0.2rem;
+    text-align: center;
+    background: #009fe8;
+    color: #ffffff;
+}
+
+.f-overlay {
+    /**fix布局,全屏,最高层,不显示*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+}
+
+.f-way {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 0 3% .5rem;
+    box-sizing: border-box;
+    position: fixed;
+    background: #ffffff;
+}
+
+.f-way h2 {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.f-way ul {
+    color: #333;
+}
+
+.f-way ul li {
+    height: 2.5rem;
+    line-height: 1.3rem;
+    font-size: 1.3rem;
+    padding: .4rem .8rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+
+.f-way ul li .pay-icon {
+    display: inline-block;
+    width: 1rem;
+    height: 100%;
+}
+
+.f-way ul li .pay-icon span {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 4%;
+    background: url("../images/pay_alipay.png") no-repeat 0 0;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.f-way ul li .pay-icon img {
+    width: 100%;
+}
+
+.f-way ul li .pay-text {
+    display: inline-block;
+}
+
+.f-way ul li .pay-text p {
+    font-size: .7rem;
+    line-height: .7rem;
+    margin-bottom: .2rem;
+}
+
+.f-way ul li .items-circle {
+    display: inline-block;
+    float: right;
+    width: 1rem;
+    height: 100%;
+}
+
+.f-way ul li .items-circle .circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: .2rem;
+    right: 0;
+    border: 1px solid #CCCCCC;
+}
+
+.f-way ul li .items-circle .circle .inside {
+    width: .5rem;
+    height: .5rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #ccc;
+}
+
+.f-way ul li .items-circle .circle .choosed {
+    background-color: #009fe8;
+}
+
+.f-way ul li .items-circle .circle .dischoosed {
+    background-color: #ccc;
+}
+
+section.others {
+    width: 100%;
+}
+
+section.others p {
+    padding: 1rem .5rem;
+    box-sizing: border-box;
+    color: #19b5ff;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

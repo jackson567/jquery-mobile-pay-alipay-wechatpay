@@ -1,0 +1,17 @@
+[
+  {
+    "way": "alipay",
+    "type":1,
+    "name":"支付宝支付",
+    "icon":"pay_alipay",
+    "slogen":"使用支付宝支付密码快捷支付"
+  },
+  {
+    "way": "wepay",
+    "type":2,
+    "name":"微信支付",
+    "icon":"pay_wechat",
+    "slogen":"亿万用户的选择,更快更安全"
+  }
+
+]
